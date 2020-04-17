@@ -7,7 +7,7 @@ function appButton(index) {
     btn.className = "maze-btn";
     btn.onclick = function () {
         if (this.style.background == "black") {
-            this.style.background = "white";
+            this.style.background = "#dbdbdb";
             this.style.color = "white";
         } else {
             this.style.background = "black";
@@ -25,10 +25,12 @@ function drawMaze(total) {
     }
     var btns = document.getElementsByClassName('maze-btn');
     btns[0].innerHTML = 'START';
-    btns[0].style.color = 'green';
+    btns[0].style.background = '#38a140';
+    btns[0].style.color = 'white';
     btns[0].onclick = function () { };
     btns[255].innerHTML = 'END';
-    btns[255].style.color = 'red';
+    btns[255].style.background = '#c25555';
+    btns[255].style.color = 'white';
     btns[255].onclick = function () { };
 }
 
@@ -45,8 +47,8 @@ function paintInitialState() {
                 btns[indexValue(i, j)].style.background = "black";
                 btns[indexValue(i, j)].style.color = "black";
             } else {
-                btns[indexValue(i, j)].style.background = "white";
-                btns[indexValue(i, j)].style.color = "white";
+                btns[indexValue(i, j)].style.background = "#dbdbdb";
+                btns[indexValue(i, j)].style.color = "#dbdbdb";
 
             }
         }
@@ -131,9 +133,9 @@ function mazeSolver() {
     if (found) {
         var btns = document.getElementsByClassName('maze-btn');
         btns[0].style.background = '#38a140';
-        btns[0].style.color = '#38a140';
+        btns[0].style.color = 'white';
         btns[255].style.background = '#38a140';
-        btns[255].style.color = '#38a140';
+        btns[255].style.color = 'white';
         var par = parent[255];
         while (par != 0) {
             btns[par].style.background = '#86d98c';
@@ -141,6 +143,8 @@ function mazeSolver() {
             par = parent[par];
         }
     } else {
+        btns[0].style.background = '#c25555';
+        btns[0].style.color = 'white';
         btns[255].style.background = '#c25555';
         btns[255].style.color = 'white';
         // alert("SORRY! NO PATH");

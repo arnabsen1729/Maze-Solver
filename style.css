@@ -1,5 +1,18 @@
 body{
-    background-color: blanchedalmond;
+    background-color: #5c5985;
+}
+
+h2{
+    font-family: 'Comic Neue', cursive;
+    margin-top: 10px;
+    color: #f0ba4f;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #maze{
@@ -15,11 +28,12 @@ body{
     height: 40px;
     padding: 0;
     margin: 0;
-    background-color:white;
-    color: white;
+    background-color:#dbdbdb;
+    color: #dbdbdb;
     border: 0;
     cursor: pointer;
     font-size: 10px;
+    font-weight: boldW;
 }
 
 button:focus {outline:0;}
