@@ -1,4 +1,2 @@
-# Maze-Solver
-Maze Solver algo.
-
-A line follower bot that makes a trial run of the maze provided, then finds a shortest path. 
+# Shortest Path Finder
+An interactive app that finds the shortest path using the Depth First Search algorithm 
