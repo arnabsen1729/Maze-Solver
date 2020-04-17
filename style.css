@@ -1,0 +1,25 @@
+body{
+    background-color: blanchedalmond;
+}
+
+#maze{
+    display: grid;
+    grid-template-columns: repeat(16, 39px);
+    grid-template-rows: repeat(16, 39px);
+    
+}
+
+
+#maze button{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    background-color:white;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+button:focus {outline:0;}
